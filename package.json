@@ -1,0 +1,59 @@
+{
+  "name": "LATF",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^31.2.0",
+    "electron-builder": "^24.13.3",
+    "electron-packager": "^17.1.2",
+    "electron-rebuild": "^3.2.9"
+  },
+  "dependencies": {
+    "ffmpeg": "^0.0.4",
+    "fs": "^0.0.1-security",
+    "jsmediatags": "^3.9.7",
+    "mp3-parser": "^0.3.0",
+    "music-metadata": "^9.0.1",
+    "node": "^18.20.4",
+    "node-id3": "^0.2.6",
+    "path": "^0.12.7"
+  },
+  "build": {
+    "appId": "com.veeloh.LATF",
+    "productName": "LATF",
+    "files": [
+     "dist/**/*",
+     "node_modules/**/*",
+     "package.json",
+     "cover.png",
+     "index.html",
+     "main.js",
+     "package-lock.json",
+     "package.json",
+     "renderer.js",
+     "styles.css",
+     ".hintrc",
+     ".gitignore"
+   ],
+    "mac": {
+      "target": "dmg"
+   },
+    "win": {
+      "target": "nsis"
+   },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+
+} 
+
+

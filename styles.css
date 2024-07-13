@@ -1,0 +1,28 @@
+#controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    margin-top: 10px; /* Add some spacing above */
+    background: lightgrey;
+}
+
+.volume-control {
+    display: flex;
+    flex-direction: column; /* Stack vertically */
+    margin-right: 10px; /* Space from the buttons */
+}
+
+#progressBar {
+    width: 30%; 
+    margin-left: 10px; /* Space from buttons */
+}
+
+#timeDisplay {
+    margin-left: 10px; /* Space from progress bar */
+}
+
+.albumCover img {
+    float: right;
+    max-width: 100%;
+    height: auto;
+}

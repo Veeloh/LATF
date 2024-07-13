@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LATF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to LATF!</h1>
+        <span id="error">No errors detected!</span>
+        <p id="folderText">Choose a folder for music!</p>
+        <button id="selectFolder">Select Music Folder</button>
+
+        
+        <div id="controls" style="display:none;">
+           
+            <button id="pauseButton">Pause</button>
+            <button id="nextButton">Next</button>
+            
+            <input type="range" id="progressBar" value="0" />
+            <div id="progressIndicator" class="progress-indicator"></div>
+            <span id="songName">Song Name</span>
+
+            <div id="timeDisplay">0:00</div>
+
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+            <span id="volumetitle"> volume</span>
+
+          
+
+        </div>
+
+        
+
+        
+
+        <div id="songsList" class="songs-list"></div>
+        
+        
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
